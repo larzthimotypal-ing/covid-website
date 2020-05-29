@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="shadow-overlay"></div>
+    <header class="header scrolled">
+        <h1 class="logo"><span>Covid-19</span>Pandemic</h1>
+        <nav class="pc-nav-bar">
+            <ul class="pc-nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li class="active">About</li>
+            </ul>
+        </nav>
+        <a href="contact.html"><button class="cta">Contact Us</button></a>
+    </header>
+    <nav class="nav-bar">
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li class="active">About</li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <section class="about-page">
+            <h1 class="about-page-title">About</h1>
+            <div class="about-page-me">
+                <p>I am <span class="name">Larz Thimoty S. Pal-ing</span> a second year BS Computer Science student of Lyceum of Alabang. This website was made according to my views and opinion regarding the current Covid-19 pandemic.</p>
+            </div>
+            <hr class="about-seperator">
+            <div class="about-page-citation">
+                <h1 class="about-page-citation-title">Special Thanks</h1>
+                <div class="about-page-citation-entry">
+                    <span>Photo by cottonbro from Pexels</span>
+                    <span><a href="https://www.pexels.com/@cottonbro">link to cottonbro's account in Pexel</a></span>
+                </div>
+                <div class="about-page-citation-entry">
+                    <span>Vector by Freepik</span>
+                    <span><a href="https://www.freepik.com/">link to Freepik</a></span>
+                </div>
+                <div class="about-page-citation-entry">
+                    <span>Photo by Pan Asia Pacific</span>
+                    <span><a href="https://panap.net/2020/04/foodandrightsnow-free-covid-19-relief-volunteers-and-food-security-advocates-in-the-philippines/">link to Pan Asia Pacific</a></span>
+                </div>
+                <div class="about-page-citation-entry">
+                    <span>Photo by Arab News</span>
+                    <span><a href="https://www.arabnews.com/node/1655621/world">link to Arab News</a></span>
+                </div>
+                <div class="about-page-citation-entry">
+                    <span>Photo by Rappler</span>
+                    <span><a href="https://www.rappler.com/nation/254977-coronavirus-cases-philippines-march-18-2020">link to Rappler</a></span>
+                </div>
+                <div class="about-page-citation-entry">
+                    <span>Photo by The Star</span>
+                    <span><a href="https://www.thestar.com.my/news/regional/2020/04/26/over-1100-philippine-health-workers-tested-positive-for-covid-19">link to The Star</a></span>
+                </div>
+                <div class="about-page-citation-entry">
+                    <span>Photo by Voa News</span>
+                    <span><a href="https://www.voanews.com/science-health/coronavirus-outbreak/philippine-president-imposes-travel-limits-quarantines">link to Voa News</a></span>
+                </div>
+                <div class="about-page-citation-entry">
+                    <span>Photo by Rappler</span>
+                    <span><a href="https://www.rappler.com/nation/253882-new-philippines-novel-coronavirus-cases-march-9-2020">link to Rappler</a></span>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <hr>
+        <div class="footer-content">
+            <div class="footer-right">
+                <span class="contact-number">(+63) 9987654321</span>
+                <span class="email-address">larzthimoty2421@gmail.com</span>
+            </div>
+            <span class="copyright">&copy; Copyright 2020 Larz Thimoty S. Pal-ing</span>
+        </div>
+    </footer>
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-links");
+        const links = document.querySelectorAll(".nav-links links");
+        const shadowOverlay = document.querySelector(".shadow-overlay");
+
+        hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("open");
+            shadowOverlay.classList.toggle("active");
+        });
+    </script>
+</body>
+</html>

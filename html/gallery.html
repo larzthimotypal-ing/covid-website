@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="shadow-overlay"></div>
+    <header class="header scrolled">
+        <h1 class="logo"><span>Covid-19</span>Pandemic</h1>
+        <nav class="pc-nav-bar">
+            <ul class="pc-nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="active">Gallery</li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+        <a href="contact.html"><button class="cta">Contact Us</button></a>
+    </header>
+    <nav class="nav-bar">
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li class="active">Gallery</li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1 class="gallery-title">Gallery</h1>
+        <section class="image-collection">
+            <div class="image-collection-row">
+                <div class="image-collection-row-container">
+                    <img src="../img/gallery/gallery-1.jpg" alt="">
+                    <p class="caption">President Duterte being checked for Covid-19</p>.
+                </div>
+                <div class="image-collection-row-container">
+                    <img src="../img/gallery/gallery-2.jpg" alt="">
+                    <p class="caption">Medical fronliners in full PPE gear.</p>
+                </div>
+                <div class="image-collection-row-container">
+                    <img src="../img/gallery/gallery-3.jpg" alt="">
+                    <p class="caption">Mlitiary frontiliners holding signs to warn people to stay at home.</p>
+                </div>
+            </div>
+            <div class="image-collection-row">
+                <div class="image-collection-row-container">
+                    <img src="../img/gallery/gallery-4.jpg" alt="">
+                    <p class="caption">A crowd waiting for public transportation.</p>
+                </div>
+                <div class="image-collection-row-container">
+                    <img src="../img/gallery/gallery-5.jpg" alt="">
+                    <p class="caption">Volunteers delivering relief goods inside a jeepney.</p>
+                </div>
+                <div class="image-collection-row-container">
+                    <img src="../img/gallery/gallery-6.jpg" alt="">
+                    <p class="caption">Students wearing facemask while on the street.</p>
+                </div>
+            </div>
+       </section>
+    </div>
+    <footer>
+        <hr>
+        <div class="footer-content">
+            <div class="footer-right">
+                <span class="contact-number">(+63) 9987654321</span>
+                <span class="email-address">larzthimoty2421@gmail.com</span>
+            </div>
+            <span class="copyright">&copy; Copyright 2020 Larz Thimoty S. Pal-ing</span>
+        </div>
+    </footer>
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-links");
+        const links = document.querySelectorAll(".nav-links links");
+        const shadowOverlay = document.querySelector(".shadow-overlay");
+
+        hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("open");
+            shadowOverlay.classList.toggle("active");
+        });
+    </script>
+</body>
+</html>
